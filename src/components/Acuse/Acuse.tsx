@@ -29,6 +29,8 @@ export default function Acuse ({
     statusAclaracionMsg,
     vistaPrevia} : Taclaracion) {
 
+    let counter = 0;
+
     return (
         <Grid container px={1} pb={1}>
         {
@@ -143,7 +145,7 @@ export default function Acuse ({
                     <TableBody>
                         {
                             datosAclarar.map(dato =>
-                                <TableRow key={dato.id} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
+                                <TableRow key={++counter} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                                     <TableCell component="th" scope="row">{dato.dato}</TableCell>
                                     <TableCell align="left">{dato.dice}</TableCell>
                                     <TableCell align="left">{dato.debeDecir}</TableCell>
