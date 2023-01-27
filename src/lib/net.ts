@@ -1,6 +1,7 @@
 import { Taclaracion, TresponseServer } from '../types/aclaraciones'
 
-const HOST = 'http://localhost:5000';
+//const HOST = 'http://localhost:5000';
+const HOST = 'https://aclaraciones-ws.onrender.com';
 
 export async function postAclaracion (aclaracion: Taclaracion): Promise<TresponseServer> {
     try {
